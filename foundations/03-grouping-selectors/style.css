@@ -1,0 +1,14 @@
+.Left-Button,
+.Right-Button {
+    font-size: 28px;
+    font-family: Hevetica, "Times New Roman", sans-serif;
+}
+
+.Left-Button {
+    background-color: black;
+    color: white;
+}
+
+.Right-Button {
+    background-color: yellow;
+}
