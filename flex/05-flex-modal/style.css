@@ -16,6 +16,10 @@ body {
   justify-content: center;
 }
 
+.text {
+  margin-bottom: 16px;
+}
+
 .header {
   /* make it a flex box */
   display: flex;
@@ -23,6 +27,9 @@ body {
   justify-content: space-between;
   /* bold the header text */
   font-weight: bold;
+  /* make header text bigger than message text */
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 .modal {
@@ -33,9 +40,15 @@ body {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
   /* padding to add space between borders */
   padding: 16px;
+  /* gap matching the padding between icon and message */
+  gap: 16px;
+  /* equal space  */
+  justify-content: space-around;
 }
 
 .icon {
+  /* disable shrinking so the icon doesnt get flattened */
+  flex-shrink: 0;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
