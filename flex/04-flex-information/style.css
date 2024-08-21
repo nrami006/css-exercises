@@ -34,7 +34,7 @@ img {
   /* Make it a flex box */
   display: flex;
   /* set width to 200px */
-  width: 200px;
+  max-width: 200px;
   /* allow wrapping of items */
   flex-wrap: wrap;
   /* change main axis to vertical */
