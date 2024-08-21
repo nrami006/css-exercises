@@ -13,6 +13,18 @@ img {
   display: flex;
   /* change main axis to vertical */
   flex-direction: column;
+  /* center items along the cross axis (horizontal) */
+  align-items: center;
+  /* add a 32px gap between items */
+  gap: 32px;
+}
+
+/* select plant-container class */
+.plant-container {
+  /* make it a flex box */
+  display: flex;
+  /* center content along main axis (horizontal)*/
+  justify-content: center;
 }
 
 .title {
