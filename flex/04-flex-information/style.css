@@ -15,7 +15,7 @@ img {
   flex-direction: column;
   /* center items along the cross axis (horizontal) */
   align-items: center;
-  /* add a 32px gap between items */
+  /* add a 32px gap between title and plant items */
   gap: 32px;
 }
 
@@ -25,16 +25,28 @@ img {
   display: flex;
   /* center content along main axis (horizontal)*/
   justify-content: center;
+  /* add a 52px gap between plant items */
+  gap: 52px;
 }
 
 /* select plant-item class */
 .plant-item {
   /* Make it a flex box */
   display: flex;
+  /* set width to 200px */
+  width: 200px;
+  /* allow wrapping of items */
+  flex-wrap: wrap;
   /* change main axis to vertical */
   flex-direction: column;
   /* center items along cross axis(horizontal) */
   align-items: center;
+}
+
+/* select text class */
+.text {
+  /* center the text */
+  text-align: center;
 }
 
 .title {
