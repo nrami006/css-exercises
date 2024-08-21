@@ -27,6 +27,16 @@ img {
   justify-content: center;
 }
 
+/* select plant-item class */
+.plant-item {
+  /* Make it a flex box */
+  display: flex;
+  /* change main axis to vertical */
+  flex-direction: column;
+  /* center items along cross axis(horizontal) */
+  align-items: center;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
