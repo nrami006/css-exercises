@@ -10,13 +10,43 @@ body {
   min-height: 100vh;
 }
 
+.main-content {
+  /* Allow this item to grow to take up as much space as it can. */
+  flex: 1;
+  /* make it a flexbox */
+  display: flex;
+}
+
+.card-grid {
+  /* make it a flexbox */
+  display: flex;
+  /* allow wrapping for flex items */
+  flex-wrap: wrap;
+}
+
+.header,
+.footer {
+  /* make them flexboxes */
+  display: flex;
+  /* align along vertical axis */
+  align-items: center;
+}
+
 .header {
+  /* Set font size */
+  font-size: 32px;
+  /* Set font weight */
+  font-weight: 900;
+  /* left padding */
+  padding-left: 16px;
   height: 72px;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
+  /* align along horizontal axis */
+  justify-content: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
@@ -24,11 +54,14 @@ body {
 
 .sidebar {
   width: 300px;
+  /* Make sidebar unable to shirnk */
+  flex-shrink: 0;
   background: royalblue;
   box-sizing: border-box;
 }
 
 .card {
+  flex: 1 1 250px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
