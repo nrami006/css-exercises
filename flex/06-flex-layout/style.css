@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  /* make body a flexbox */
   display: flex;
+  /* change main axis to column */
   flex-direction: column;
+  /* Pin header and footer to appropriate places */
   justify-content: space-between;
   height: 100vh;
   margin: 0;
@@ -19,6 +22,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* pad the buttons */
+  padding: 8px 16px;
 }
 
 input {
@@ -37,13 +42,15 @@ ul {
 }
 
 a {
+  /* Set color for anchors (links in header and footer) */
+  color: gray;
   text-decoration: none;
 }
 
 a,
 .header,
 .footer {
-  /* add padding to header and footer */
+  /* add padding to header and footer and links within them */
   padding: 12px 8px;
 }
 
@@ -53,6 +60,17 @@ a,
   display: flex;
   /* Align items on left and right sides */
   justify-content: space-between;
+}
+
+.content {
+  /* Make it a flexbox */
+  display: flex;
+  /* set main axis vertical */
+  flex-direction: column;
+  /* center items horizontally */
+  align-items: center;
+  /* add space between logo, search bar, and buttons */
+  gap: 16px;
 }
 
 .footer {
