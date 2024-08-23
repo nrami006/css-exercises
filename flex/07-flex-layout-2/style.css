@@ -11,16 +11,20 @@ body {
 }
 
 .sidebar ul {
+  /* Remove dots from ul */
   list-style-type: none;
+  /* remove default padding and margins */
   padding: 0;
   margin: 0;
 }
 
-.sidebar ul li {
+.sidebar li {
+  /* separate list items in sidebar by 16px */
   margin-bottom: 16px;
 }
 
-.sidebar ul a {
+.sidebar a {
+  /* Make links in sidebar 24px, white, and with no underline*/
   font-size: 24px;
   color: white;
   text-decoration: none;
@@ -38,6 +42,10 @@ body {
   display: flex;
   /* allow wrapping for flex items */
   flex-wrap: wrap;
+  /* padding */
+  padding: 48px;
+  /* space between cards */
+  gap: 30px;
 }
 
 .header,
@@ -79,7 +87,10 @@ body {
 }
 
 .card {
-  flex: 1 1 250px;
+  /* Set width for cards so flex-wrap will work */
+  width: 300px;
+  /* padding for cards */
+  padding: 16px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
